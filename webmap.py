@@ -76,8 +76,8 @@ with st.sidebar:
     st.write('The complete St.Lawrence River and United States portions should be added in a few months')
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
-    st.write('Contributors: Dominic Thériault, Charles Marcotte and Patrice Fortin')
-    st.write('©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
+    st.write('Contributors: Dominic ThÃ©riault, Charles Marcotte and Patrice Fortin')
+    st.write('Â©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
     st.write(f'Last update: {date.today()}')
 folium_static(folium_map, 1200, 700)
 
