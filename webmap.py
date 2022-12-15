@@ -39,7 +39,7 @@ def folium_static(fig, width, height):
 folium_map = f.Map(location=[43.9, -77.3], zoom_start=8, tiles='openstreetmap')
 #===============================================================================
 #grille="F:\DEM_GLAMM\AOI\grille_Charles\Tuile_final.shp"
-grille='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/tuile_final.geojson'
+grille='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/tiles.zip'
 gdf_grille=gpd.read_file(grille)
 gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
@@ -140,8 +140,8 @@ with st.sidebar:
     st.write('The complete St.Lawrence River and United States portions should be added in a few months')
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
-    st.write('Contributors: Dominic Thériault, Charles Marcotte and Patrice Fortin')
-    st.write('©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
+    st.write('Contributors: Dominic ThÃ©riault, Charles Marcotte and Patrice Fortin')
+    st.write('Â©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
     st.write(f'Last update: {date.today()}')
 folium_static(folium_map, 1200, 700)
 #html_map = folium_map._repr_html_()
