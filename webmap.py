@@ -39,11 +39,10 @@ folium_map = f.Map(location=[43.9, -77.3], zoom_start=8, tiles='openstreetmap')
 #===============================================================================
 #grille="F:\DEM_GLAMM\AOI\grille_Charles\Tuile_final.shp"
 ##grille='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/tiles.zip'
-
+tuiles='https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/tuile_final3.geojson'
 #file = open(grille, "rb")
-#gdf_grille=gpd.read_file(grille)
-#gjson = gdf_grille.to_crs(epsg='4326').to_json()
-gjson='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/tuile_final3.geojson'
+gdf_grille=gpd.read_file(tuiles)
+gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
 for z in js_data['features']:
     link=f'https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2F{int(z["properties"]["id"])}%5F10m%5FDEM%5Fidw%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m&ga=1'
