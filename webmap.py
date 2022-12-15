@@ -42,7 +42,7 @@ folium_map = f.Map(location=[43.9, -77.3], zoom_start=8, tiles='openstreetmap')
 
 #file = open(grille, "rb")
 #gdf_grille=gpd.read_file(grille)
-gjson = gdf_grille.to_crs(epsg='4326').to_json()
+#gjson = gdf_grille.to_crs(epsg='4326').to_json()
 gjson='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/tuile_final3.geojson'
 js_data = json.loads(gjson)
 for z in js_data['features']:
