@@ -38,8 +38,9 @@ def folium_static(fig, width, height):
 folium_map = f.Map(location=[43.9, -77.3], zoom_start=8, tiles='openstreetmap')
 #===============================================================================
 #grille="F:\DEM_GLAMM\AOI\grille_Charles\Tuile_final.shp"
-grille='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/Tuile_final2.shp'
-gdf_grille=gpd.read_file(grille)
+grille='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/Tuile_final.zip'
+file = open(grille, "rb")
+gdf_grille=gpd.read_file(file)
 gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
 for z in js_data['features']:
