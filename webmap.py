@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: iso-8859-15 -*-
 #import ellipsis as el
+#allo
 import folium as f
 import streamlit as st
 import os
