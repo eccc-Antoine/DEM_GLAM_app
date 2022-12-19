@@ -30,9 +30,10 @@ gdf_grille=gpd.read_file(tuiles)
 gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
 for z in js_data['features']:
-    link=f'https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2F{int(z["properties"]["id"])}%5F10m%5FDEM%5Fidw%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m&ga=1'
+    #link=f'https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2F{int(z["properties"]["id"])}%5F10m%5FDEM%5Fidw%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m&ga=1'
     b = f.GeoJson(z['geometry'])
-    b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))} \n <a href={link} target="_blank">download (ECCC members only)</a>' ))
+    #b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))} \n <a href={link} target="_blank">download (ECCC members only)</a>' ))
+    b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))}'))
     b.add_to(folium_map)
 
 ##hillshade_4326
@@ -80,8 +81,8 @@ with st.sidebar:
     st.write('The complete St.Lawrence River and United States portions should be added in a few months')
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
-    st.write('Contributors: Dominic Thériault, Charles Marcotte and Patrice Fortin')
-    st.write('©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
+    st.write('Contributors: Dominic Theriault, Charles Marcotte and Patrice Fortin')
+    st.write('�Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
     st.write(f'Last update: {date.today()}')
 folium_static(folium_map, 1200, 700)
 
