@@ -73,7 +73,7 @@ with st.sidebar:
     #if clicked:
     st.write('Seamless Digital Terrain Model created from various topographic and bathymetric data sources')
     st.write('Elevation values are in IGLD85 (m) and each tiles are projected in EPSG: 32617, 32618 and 32619 according to the UTM zone they belong to.')
-    st.write(f'This overview is a 100m resolution mosaic of the DTM in EPSG:4326 <a href={link_mosaic} target="_blank">download (ECCC members only)</a>') 
+    st.write(f'This overview is a 100m resolution mosaic of the DTM in EPSG:4326 [link] ({link_mosaic})') 
     st.write('Click on a tile to download a 10m resolution DTM (ECCC members only), Note that 1m resolution DTM are also available on demand by email')
     st.write('Complete methodology and metadata will be available soon')
     st.write('The complete St.Lawrence River and United States portions should be added in a few months')
