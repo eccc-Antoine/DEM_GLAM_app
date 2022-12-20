@@ -43,7 +43,8 @@ def popup_html(z):
     tile_id=f'Tile: {int(z["properties"]["id"])}'
     utm=f'UTM zone: {str(int(z["properties"]["UTM"]))}'
     link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{int(z["properties"]["id"])}_10m_DEM_idw_hillshade.png'
-    link2=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
+    #link2=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
+    link2='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/plotly_html/170_100m.html'
    
     html = """
 <!DOCTYPE html>
@@ -51,6 +52,7 @@ def popup_html(z):
 <center><p> """ + tile_id + """ </p></center>
 <center><p> """ + utm + """ </p></center>
 <center><a href=\"""" + link + """\" target="_blank">Tile overview</a></center>
+
 <center><a href=\"""" + link2 + """\" target="_blank">Play with it!</a></center>
 
 </html>
