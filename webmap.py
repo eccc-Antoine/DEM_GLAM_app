@@ -35,7 +35,7 @@ def popup_html(z):
     html = """
 <!DOCTYPE html>
 <html>
-<center><a href=\"""" + link + """\">DEM overview</a></center>
+<center><a href=\"""" + link + """\" target="_blank">DEM overview</a></center>
 </html>
 """
     return html
