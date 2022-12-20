@@ -32,10 +32,12 @@ gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
 
 
-url='https://api.ellipsis-drive.com/v3/path/4dcef727-21d2-4bb4-b672-44fdef18c03d/file/data?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiZTQ4NTM5M2EtNzI2Mi00YTg4LTkzNzUtODI4OTg3MzJkMzczIiwiaWF0IjoxNjcxMDQ0MDI0LCJleHAiOjE2NzM3MjI0MjR9.UCuwowNeUnd8TdiIABiE6rGy4QyDyQhJXkZgnz81e3M'
-download=requests.get(url)
-print(download)
-quit()
+#===============================================================================
+# url='https://api.ellipsis-drive.com/v3/path/4dcef727-21d2-4bb4-b672-44fdef18c03d/file/data?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiZTQ4NTM5M2EtNzI2Mi00YTg4LTkzNzUtODI4OTg3MzJkMzczIiwiaWF0IjoxNjcxMDQ0MDI0LCJleHAiOjE2NzM3MjI0MjR9.UCuwowNeUnd8TdiIABiE6rGy4QyDyQhJXkZgnz81e3M'
+# download=requests.get(url)
+# print(download)
+# quit()
+#===============================================================================
 
 def popup_html(z):
     tile_id=f'Tile: {int(z["properties"]["id"])}'
