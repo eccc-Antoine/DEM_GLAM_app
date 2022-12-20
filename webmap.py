@@ -44,7 +44,7 @@ def popup_html(z):
     utm=f'UTM zone: {str(int(z["properties"]["UTM"]))}'
     link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{int(z["properties"]["id"])}_10m_DEM_idw_hillshade.png'
     #link2=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
-    link2='https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/plotly_html/170_100m.html'
+    link2='http://htmlpreview.github.io/?https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/plotly_html/170_100m.html'
    
     html = """
 <!DOCTYPE html>
