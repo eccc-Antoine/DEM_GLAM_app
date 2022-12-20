@@ -10,6 +10,7 @@ from folium import plugins
 import geopandas as gpd
 import json
 from datetime import date
+import requests
 
 def folium_static(fig, width, height):
     if isinstance(fig, f.Map):
@@ -30,16 +31,26 @@ gdf_grille=gpd.read_file(tuiles)
 gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
 
+
+url='https://api.ellipsis-drive.com/v3/path/4dcef727-21d2-4bb4-b672-44fdef18c03d/file/data?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiZTQ4NTM5M2EtNzI2Mi00YTg4LTkzNzUtODI4OTg3MzJkMzczIiwiaWF0IjoxNjcxMDQ0MDI0LCJleHAiOjE2NzM3MjI0MjR9.UCuwowNeUnd8TdiIABiE6rGy4QyDyQhJXkZgnz81e3M'
+download=requests.get(url)
+print(download)
+quit()
+
 def popup_html(z):
     tile_id=f'Tile: {int(z["properties"]["id"])}'
     utm=f'UTM zone: {str(int(z["properties"]["UTM"]))}'
     link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{int(z["properties"]["id"])}_10m_DEM_idw_hillshade.png'
+    link2=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
+   
     html = """
 <!DOCTYPE html>
 <html>
 <center><p> """ + tile_id + """ </p></center>
 <center><p> """ + utm + """ </p></center>
-<center><a href=\"""" + link + """\" target="_blank">DEM overview</a></center>
+<center><a href=\"""" + link + """\" target="_blank">Tile overview</a></center>
+<center><a href=\"""" + link2 + """\" target="_blank">Play with it!</a></center>
+
 </html>
 """
     return html
