@@ -29,11 +29,24 @@ tuiles='https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/tuile_f
 gdf_grille=gpd.read_file(tuiles)
 gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
+
+def popup_html(z):
+    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{z}_10m_DEM_idw_hillshade.png'
+    html = """
+<!DOCTYPE html>
+<html>
+<center><a href=\"""" + link + """\">DEM overview</a></center>
+</html>
+"""
+    return html
+    
 for z in js_data['features']:
     #link=f'https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2F{int(z["properties"]["id"])}%5F10m%5FDEM%5Fidw%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m&ga=1'
     b = f.GeoJson(z['geometry'])
     #b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))} \n <a href={link} target="_blank">download (ECCC members only)</a>' ))
-    b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))}'))
+    html = popup_html(z)
+    #b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))}'))
+    b.add_child(f.Popup(f.Html(html, script=True)))
     b.add_to(folium_map)
 
 ##hillshade_4326
