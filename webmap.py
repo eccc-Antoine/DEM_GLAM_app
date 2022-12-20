@@ -53,9 +53,9 @@ def popup_html(z):
 <center><p> """ + tile_id + """ </p></center>
 <center><p> """ + utm + """ </p></center>
 <center><a href=\"""" + link + """\" target="_blank">Tile overview</a></center>
-<tr>
+<br>
 <center><a href=\"""" + link2 + """\" target="_blank">Play with it!</a></center>
-</tr>
+
 </html>
 """
     return html
