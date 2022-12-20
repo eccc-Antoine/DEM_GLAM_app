@@ -31,7 +31,7 @@ gjson = gdf_grille.to_crs(epsg='4326').to_json()
 js_data = json.loads(gjson)
 
 def popup_html(z):
-    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{z}_10m_DEM_idw_hillshade.png'
+    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{int(z["properties"]["id"])}_10m_DEM_idw_hillshade.png'
     html = """
 <!DOCTYPE html>
 <html>
