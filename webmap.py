@@ -99,15 +99,16 @@ streamlit_style = """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
 repo_link='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?login_hint=antoine%2Emaranda%40ec%2Egc%2Eca&id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
-st.title(f"Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
+st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
 
 link_mosaic='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2Fmosaic%5F100m%5F4326%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
 
 with st.sidebar:
     #clicked = st.button('More info...')
     #if clicked:
-    st.write('Seamless Digital Terrain Model created from various topographic and bathymetric data sources')
-    st.write('Elevation values are in IGLD85 (m) and each tiles are projected in EPSG: 32617, 32618 and 32619 according to the UTM zone they belong to.')
+    st.write('PRELIMINARY VERSION of Seamless Digital Terrain Model created from various topographic and bathymetric data sources')
+    st.write('This is a preliminary version of should be used and shared only amongst GLAM commitee members. QA/QC is still ongoing')
+    st.write('Elevation values are in IGLD85 (m) and each tiles are projected in EPSG: 32617, 32618 and 32619 according to the UTM zone they belong to')
     st.write(f"This overview is a 100m resolution mosaic of the DTM in EPSG:4326 [Download (ECCC members only)]({link_mosaic})")
     st.write('Note that 1m resolution DTM are also available on demand by email')
     st.write('Complete methodology and metadata will be available soon')
