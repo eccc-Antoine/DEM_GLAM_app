@@ -66,7 +66,7 @@ for z in js_data['features']:
     #b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))} \n <a href={link} target="_blank">download (ECCC members only)</a>' ))
     html = popup_html(z)
     #b.add_child(f.Popup(f'Tile: {str(int(z["properties"]["id"]))} \n UTM_ZONE: {str(int(z["properties"]["UTM"]))}'))
-    b.add_child(f.Popup(f.Html(html, script=True)))
+    b.add_child(f.Popup(f.Html(html, script=True), min_width=300, max_width=300))
     b.add_to(folium_map)
 
 ##hillshade_4326
