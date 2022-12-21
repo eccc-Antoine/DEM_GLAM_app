@@ -54,7 +54,7 @@ def popup_html(z):
 <center><p> """ + utm + """ </p></center>
 <center><a href=\"""" + link + """\" target="_blank">Tile overview</a></center>
 <br>
-<center><a href=\"""" + link2 + """\" target="_blank">Play with it!</a></center>
+<center><a href=\"""" + link2 + """\" target="_blank">Interactive 3D plot</a></center>
 
 </html>
 """
