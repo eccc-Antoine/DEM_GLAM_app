@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: iso-8859-15 -*-
 #import ellipsis as el
 #allo
 import folium as f
@@ -102,7 +101,7 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 #st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
 repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
-st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River)")
+st.title(f"🎅 PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River) 🎄")
 members='(ECCC members only)'
 st.write(f'Download Repository {members}:\n[10m resolution DTM (.tif)]({repo_link})\n[3D interactive plots(10m)]({plotly_link})')
 
@@ -121,7 +120,7 @@ with st.sidebar:
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
     st.write('Contributors: Dominic Theriault, Charles Marcotte and Patrice Fortin')
-    st.write('�Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
+    st.write('Â©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
     st.write(f'Last update: {date.today()}')
 folium_static(folium_map, 1200, 700)
 
