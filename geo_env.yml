@@ -63,7 +63,7 @@ dependencies:
   - executing=1.2.0=pyhd8ed1ab_0
   - expat=2.4.8=h39d44d4_0
   - fiona=1.8.18=py39h9f1b043_1
-  - folium=0.13.0=pyhd8ed1ab_0
+  - folium=0.14.0=pyhd8ed1ab_0
   - fontconfig=2.14.0=hce3cb01_0
   - fonttools=4.37.1=py39hb82d6ee_0
   - freetype=2.12.1=h546665d_0
