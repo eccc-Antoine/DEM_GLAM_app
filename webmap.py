@@ -9,7 +9,7 @@ from folium import plugins
 import geopandas as gpd
 import json
 from datetime import date
-import requests
+#import requests
 
 def folium_static(fig, width, height):
     if isinstance(fig, f.Map):
