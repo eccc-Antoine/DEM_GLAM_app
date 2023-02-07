@@ -41,7 +41,7 @@ js_data = json.loads(gjson)
 def popup_html(z):
     tile_id=f'Tile: {int(z["properties"]["id"])}'
     utm=f'UTM zone: {str(int(z["properties"]["UTM"]))}'
-    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/DEM_overviews/{int(z["properties"]["id"])}_10m_DEM_idw_hillshade.png'
+    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/1m_DTM_overview/{int(z["properties"]["id"])}_1m_DEM_idw_filtered_hillshade.png'
     #link2=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
     #link2='http://htmlpreview.github.io/?https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/plotly_html/170_100m.html'
     link2=f'https://raw.githack.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
@@ -51,7 +51,7 @@ def popup_html(z):
 <html>
 <center><p> """ + tile_id + """ </p></center>
 <center><p> """ + utm + """ </p></center>
-<center><a href=\"""" + link + """\" target="_blank">Tile overview (10m res)</a></center>
+<center><a href=\"""" + link + """\" target="_blank">Tile overview (1m res)</a></center>
 <br>
 <center><a href=\"""" + link2 + """\" target="_blank">Interactive 3D plot (100m res)</a></center>
 
@@ -99,7 +99,8 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 
 #repo_link='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?login_hint=antoine%2Emaranda%40ec%2Egc%2Eca&id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
 #st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
-repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
+repo_link='https://007gc-my.sharepoint.com/:f:/r/personal/antoine_maranda_ec_gc_ca/Documents/DEM_GLAM/DTM_LKO_USL_CAN_v2?csf=1&web=1&e=4tdin7'
+#repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
 st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River) ")
 members='(ECCC members only)'
