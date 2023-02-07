@@ -102,7 +102,7 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 repo_link='https://007gc-my.sharepoint.com/:f:/r/personal/antoine_maranda_ec_gc_ca/Documents/DEM_GLAM/DTM_LKO_USL_CAN_v2?csf=1&web=1&e=4tdin7'
 #repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
-st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River) ")
+st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River)")
 members='(ECCC members only)'
 st.write(f'[Download Repository {members}]({repo_link})')
 
