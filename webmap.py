@@ -86,16 +86,19 @@ dem_layer.add_to(folium_map)
 #mk.add_to(folium_map)
 #st.markdown(folium_map._repr_html_(), unsafe_allow_html =True)
 st.set_page_config(page_title=None, layout="wide")
-streamlit_style = """
-            <style>
-            @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
-            html, body, [class*="css"]  {
-            font-family: 'Nanum Myeongjo', serif;
-            }
-            </style>
-            """
-st.markdown(streamlit_style, unsafe_allow_html=True)
+#===============================================================================
+# streamlit_style = """
+#             <style>
+#             @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+# 
+#             html, body, [class*="css"]  {
+#             font-family: 'Nanum Myeongjo', serif;
+#             }
+#             </style>
+#             """
+# st.markdown(streamlit_style, unsafe_allow_html=True)
+#===============================================================================
 
 #repo_link='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?login_hint=antoine%2Emaranda%40ec%2Egc%2Eca&id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
 #st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
