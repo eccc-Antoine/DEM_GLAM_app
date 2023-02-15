@@ -106,7 +106,7 @@ plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_g
 st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River)")
 members='(ECCC members only)'
 st.header(f'[Full resolution DTM Download Repository {members}]({repo_link})')
-st.subheader('Or click on a tile to see to have access ton a 1m resolution overview')
+st.subheader('Or click on a tile for a 1m resolution overview')
 #link_mosaic='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2Fmosaic%5F100m%5F4326%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
 link_mosaic='https://007gc-my.sharepoint.com/:u:/g/personal/antoine_maranda_ec_gc_ca/ERUhVqRdYQtNnaks3JKOkgMBydx9qBcmaAZNfMg19Be9yw?e=sdwrMt'
 
