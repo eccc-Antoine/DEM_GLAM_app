@@ -105,9 +105,9 @@ repo_link='https://007gc-my.sharepoint.com/:f:/r/personal/antoine_maranda_ec_gc_
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
 st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River)")
 members='(ECCC members only)'
-st.write(f'[Download Repository {members}]({repo_link})')
-
-link_mosaic='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2Fmosaic%5F100m%5F4326%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
+st.header(f'[Full resolution DTM Download Repository {members}]({repo_link})')
+#link_mosaic='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2Fmosaic%5F100m%5F4326%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
+link_mosaic='https://007gc-my.sharepoint.com/:u:/g/personal/antoine_maranda_ec_gc_ca/ERUhVqRdYQtNnaks3JKOkgMBydx9qBcmaAZNfMg19Be9yw?e=sdwrMt'
 
 with st.sidebar:
     #clicked = st.button('More info...')
