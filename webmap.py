@@ -70,12 +70,14 @@ for z in js_data['features']:
 
 ##hillshade_4326
 ## dont seem to ba available anymore from ellipsis (copy XYZ path link and adapt to fit this pattern)
-xyz_hillshade='https://api.ellipsis-drive.com/v3/path/58365cdd-cf3d-4601-909d-f58feead0c94/raster/timestamp/d076f5ea-b93c-49e3-b809-a452895ffb4d/tile/{z}/{x}/{y}?style=ffc495e8-9dc1-44fd-9ca4-cc813f7970bc&token=epat_cyWz6w9UyHVTqmBplpDYT7x4pIsF1ucCIkfrXTjUUG1FJsyU3otkGqKYpX2S1dfo'
-
+#xyz_hillshade='https://api.ellipsis-drive.com/v3/path/58365cdd-cf3d-4601-909d-f58feead0c94/raster/timestamp/d076f5ea-b93c-49e3-b809-a452895ffb4d/tile/{z}/{x}/{y}?style=ffc495e8-9dc1-44fd-9ca4-cc813f7970bc&token=epat_cyWz6w9UyHVTqmBplpDYT7x4pIsF1ucCIkfrXTjUUG1FJsyU3otkGqKYpX2S1dfo'
+xyz_hillshade='https://api.ellipsis-drive.com/v3/path/4a0dc72e-613c-40d3-bd16-10fa6b02f76b/raster/timestamp/078210ff-b941-4482-bc53-cd9915f45b78/tile/{z}/{x}/{y}?style=76fe80c8%2d5596%2d4481%2d9159%2ded16d50689bb&token=epat_7ET8ZDhEl0cRU4cEyHYei8STvCkAIGhj9pIIr4IvdwdNOUqmocDxJBJDvycLzUBM'
 
 ##DEM_4326
 ## dont seem to ba available anymore from ellipsis (copy XYZ path link and adapt to fit this pattern)
-xyz_DEM='https://api.ellipsis-drive.com/v3/path/cb6ae9bb-ddf7-4e5a-a77e-e7aae2776ad8/raster/timestamp/b19b2f73-3bc3-46bb-a043-09c01c77d506/tile/{z}/{x}/{y}?style=801c69ff-2364-46d8-804b-2a79d65fb3f2&token=epat_93TjyBAf6LLAFP7DPHeIDgnUW0BRqVjOMWqpRK4X7n5TZGHddK8hkn6tOYd8U958'
+#xyz_DEM='https://api.ellipsis-drive.com/v3/path/cb6ae9bb-ddf7-4e5a-a77e-e7aae2776ad8/raster/timestamp/b19b2f73-3bc3-46bb-a043-09c01c77d506/tile/{z}/{x}/{y}?style=801c69ff-2364-46d8-804b-2a79d65fb3f2&token=epat_93TjyBAf6LLAFP7DPHeIDgnUW0BRqVjOMWqpRK4X7n5TZGHddK8hkn6tOYd8U958'
+xyz_DEM='https://api.ellipsis-drive.com/v3/path/3853ae6f-5c70-43c0-81d2-d1df4558510b/raster/timestamp/088a7ed4-d0b7-4aea-a7cb-868e398fc866/tile/{z}/{x}/{y}?style=4eac556d%2dada4%2d4995%2d9a2a%2d83d76e594236&token=epat_yAzrz2vUde9NBFt4N71HRTOsePLqmBmKGfxCd9Dfv4BfrUJhN5V0JUxDLGU4ESB1'
+
 hillshade_layer=f.raster_layers.TileLayer(tiles=xyz_hillshade, attr = 'ED', max_native_zoom=17)
 hillshade_layer.add_to(folium_map)
 
