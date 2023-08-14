@@ -41,10 +41,10 @@ js_data = json.loads(gjson)
 def popup_html(z):
     tile_id=f'Tile: {int(z["properties"]["id"])}'
     utm=f'UTM zone: {str(int(z["properties"]["UTM"]))}'
-    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/1m_DTM_overview/{int(z["properties"]["id"])}_1m_DEM_idw_filtered_hillshade.png'
+    link=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/1m_DTM_overview2/{int(z["properties"]["id"])}_1m_DEM_idw_filtered_hillshade.png'
     #link2=f'https://raw.githubusercontent.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
     #link2='http://htmlpreview.github.io/?https://github.com/eccc-Antoine/DEM_GLAM_app/blob/main/plotly_html/170_100m.html'
-    link2=f'https://raw.githack.com/eccc-Antoine/DEM_GLAM_app/main/plotly_html/{int(z["properties"]["id"])}_100m.html'
+    link2=f'https://raw.githack.com/eccc-Antoine/DEM_GLAM_app/main/plotly_100m_3D/{int(z["properties"]["id"])}_100m.html'
    
     html = """
 <!DOCTYPE html>
