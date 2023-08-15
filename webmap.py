@@ -106,7 +106,7 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 repo_link='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDTM%5FLKO%5FUSL%5Fv4&view=0'
 #repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
-st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model (Lake Ontario and Upper St. Lawrence River)")
+st.title(f"PRELIMINARY VERSION of Topobathymetric Digital Elevation Model (Lake Ontario and Upper St. Lawrence River)")
 members='(ECCC members only)'
 st.header(f'[Full resolution DTM Download Repository {members}]({repo_link})')
 st.subheader('Or click on a tile for a 1m resolution overview')
@@ -116,18 +116,18 @@ link_mosaic='https://007gc-my.sharepoint.com/:u:/g/personal/antoine_maranda_ec_g
 with st.sidebar:
     #clicked = st.button('More info...')
     #if clicked:
-    st.write('PRELIMINARY VERSION of Seamless Digital Terrain Model created from various topographic and bathymetric data sources')
+    st.write('PRELIMINARY VERSION of Topobathymetric Digital Elevation Model created from various topographic and bathymetric data sources')
     st.write('This is a preliminary version of should be used and shared with caution. QA/QC is still ongoing')
     st.write('DTMs are available at 1 and 10 meter resolution')
     st.write('Elevation values are in IGLD85 (m) and each tiles are projected in EPSG: 32617, 32618 and 32619 according to the UTM zone they belong to')
-    st.write('Attached log files provide information on DTM creation process and dataset prioritization')
-    st.write(f"This overview is a 100m resolution mosaic of the DTM in EPSG:4326 [Download (ECCC members only)]({link_mosaic})")
+    st.write('Attached log files provide information on DEM creation process and dataset prioritization')
+    st.write(f"This overview is a 100m resolution mosaic of the DEM in EPSG:4326 [Download (ECCC members only)]({link_mosaic})")
     st.write('Complete methodology and metadata will be available in the next few months')
     st.write('The complete St.Lawrence River and United States portions should be added in a few months')
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
     st.write('Contributors: Dominic Theriault, Charles Marcotte and Patrice Fortin')
-    st.write('©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2022')
+    st.write('©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2023')
     st.write(f'Last update: {date.today()}')
 folium_static(folium_map, 1200, 700)
 
