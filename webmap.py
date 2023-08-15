@@ -123,7 +123,7 @@ with st.sidebar:
     st.write('Attached log files provide information on DEM creation process and dataset prioritization')
     st.write(f"This overview is a 100m resolution mosaic of the DEM in EPSG:4326 [Download (ECCC members only)]({link_mosaic})")
     st.write('Complete methodology and metadata will be available in the next few months')
-    st.write('The complete St.Lawrence River and United States portions should be added in a few months')
+    st.write('St.Lawrence River portion up to Trois-Rivières should be added in a few months')
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
     st.write('Contributors: Dominic Theriault, Charles Marcotte and Patrice Fortin')
