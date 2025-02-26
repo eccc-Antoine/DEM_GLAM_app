@@ -71,8 +71,8 @@ for z in js_data['features']:
 ##hillshade_4326
 ## dont seem to ba available anymore from ellipsis (copy XYZ path link and adapt to fit this pattern)
 #xyz_hillshade='https://api.ellipsis-drive.com/v3/path/58365cdd-cf3d-4601-909d-f58feead0c94/raster/timestamp/d076f5ea-b93c-49e3-b809-a452895ffb4d/tile/{z}/{x}/{y}?style=ffc495e8-9dc1-44fd-9ca4-cc813f7970bc&token=epat_cyWz6w9UyHVTqmBplpDYT7x4pIsF1ucCIkfrXTjUUG1FJsyU3otkGqKYpX2S1dfo'
-xyz_hillshade='https://api.ellipsis-drive.com/v3/path/4a0dc72e-613c-40d3-bd16-10fa6b02f76b/raster/timestamp/078210ff-b941-4482-bc53-cd9915f45b78/tile/{z}/{x}/{y}?style=76fe80c8%2d5596%2d4481%2d9159%2ded16d50689bb&token=epat_7ET8ZDhEl0cRU4cEyHYei8STvCkAIGhj9pIIr4IvdwdNOUqmocDxJBJDvycLzUBM'
-
+#xyz_hillshade='https://api.ellipsis-drive.com/v3/path/4a0dc72e-613c-40d3-bd16-10fa6b02f76b/raster/timestamp/078210ff-b941-4482-bc53-cd9915f45b78/tile/{z}/{x}/{y}?style=76fe80c8%2d5596%2d4481%2d9159%2ded16d50689bb&token=epat_7ET8ZDhEl0cRU4cEyHYei8STvCkAIGhj9pIIr4IvdwdNOUqmocDxJBJDvycLzUBM'
+xyz_hillshade='https://api.ellipsis-drive.com/v3/path/6c500157-ddc3-4ee6-ba56-995b7fce7c3a/raster/timestamp/477207fd-39f0-4b87-acfd-48142c0a0b4f/tile/{z}/{x}/{y}?style=dc490889-3eaa-41df-b37a-96006b95d780&token=epat_j2PrTLqXDwJW9EiKZbaGzr9chhCrUACOWsZ0ZBOzvU2p6oo5CqliKOBw4io0SOeZ'
 ##DEM_4326
 ## dont seem to ba available anymore from ellipsis (copy XYZ path link and adapt to fit this pattern)
 #xyz_DEM='https://api.ellipsis-drive.com/v3/path/cb6ae9bb-ddf7-4e5a-a77e-e7aae2776ad8/raster/timestamp/b19b2f73-3bc3-46bb-a043-09c01c77d506/tile/{z}/{x}/{y}?style=801c69ff-2364-46d8-804b-2a79d65fb3f2&token=epat_93TjyBAf6LLAFP7DPHeIDgnUW0BRqVjOMWqpRK4X7n5TZGHddK8hkn6tOYd8U958'
@@ -101,14 +101,14 @@ streamlit_style = """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
 #repo_link='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?login_hint=antoine%2Emaranda%40ec%2Egc%2Eca&id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
-#st.title(f"PRELIMINARY VERSION of Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
+#st.title(f"Version 4.2 of Topographic and bathymetric Digital Terrain Model\n Lake Ontario and Upper St. Lawrence River [Download Repository (ECCC members only)]({repo_link})")
 #repo_link='https://007gc-my.sharepoint.com/:f:/r/personal/antoine_maranda_ec_gc_ca/Documents/DEM_GLAM/DTM_LKO_USL_CAN_v4?csf=1&web=1&e=4tdin7'
 #repo_link='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDTM%5FLKO%5FUSL%5Fv4&view=0'
 repo_link='https://ijccmi.sharepoint.com/sites/GLAM/ILOSLRB%20Technical%20Teams/Forms/AllItems.aspx?csf=1&web=1&e=QzZsej&CID=c6846815%2Dc9d1%2D4d59%2Da204%2D63366a96e9a9&FolderCTID=0x012000290495FEB2027644A86E4691A6154C95&id=%2Fsites%2FGLAM%2FILOSLRB%20Technical%20Teams%2FExternal%20Data%20Sharing%2FDEM%5FLKO%5FUSL%5FSLR%5FV4%5F2&viewid=3f981477%2D2845%2D4f20%2Db31c%2Dceae155d20b2'
 #repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
 st.title(f"PRELIMINARY VERSION of Topobathymetric Digital Elevation Model (Lake Ontario and Upper St. Lawrence River)")
-members='(ECCC members only)'
+members='(GLAM members only)'
 st.header(f'[Full resolution DTM Download Repository {members}]({repo_link})')
 st.subheader('Or click on a tile for a 1m resolution overview')
 #link_mosaic='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2Fmosaic%5F100m%5F4326%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
@@ -117,8 +117,8 @@ link_mosaic='https://007gc-my.sharepoint.com/:u:/g/personal/antoine_maranda_ec_g
 with st.sidebar:
     #clicked = st.button('More info...')
     #if clicked:
-    st.write('PRELIMINARY VERSION of Topobathymetric Digital Elevation Model created from various topographic and bathymetric data sources')
-    st.write('This is a preliminary version of should be used and shared with caution. QA/QC is still ongoing')
+    st.write('Version 4.2 of Topobathymetric Digital Elevation Model created from various topographic and bathymetric data sources')
+    st.write('This is product is in conitnuous imporovement and should be used and shared with caution')
     st.write('DTMs are available at 1 and 10 meter resolution')
     st.write('Elevation values are in IGLD85 (m) and each tiles are projected in EPSG: 32617, 32618 and 32619 according to the UTM zone they belong to')
     st.write('Attached log files provide information on DEM creation process and dataset prioritization')
