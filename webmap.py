@@ -128,7 +128,7 @@ with st.sidebar:
     st.write('St.Lawrence River portion up to Trois-Rivières should be added in a few months')
     st.write('For any comments or enquiries send an email to  antoine.maranda@ec.gc.ca')
     st.write('Author: Antoine Maranda')
-    st.write('Contributors: Dominic Theriault, Charles Marcotte and Patrice Fortin')
+    st.write('Contributors: Dominic Theriault, Patrice Fortin and Charles Marcotte')
     st.write('©Environment and Climate Change Canada, National Hydrologic Services, Hydrodynamic and Ecohydraulic Section, 2023')
     st.write(f'Last update: {date.today()}')
 folium_static(folium_map, 1200, 700)
