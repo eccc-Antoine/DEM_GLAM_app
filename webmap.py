@@ -107,8 +107,8 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 repo_link='https://ijccmi.sharepoint.com/sites/GLAM/ILOSLRB%20Technical%20Teams/Forms/AllItems.aspx?csf=1&web=1&e=QzZsej&CID=c6846815%2Dc9d1%2D4d59%2Da204%2D63366a96e9a9&FolderCTID=0x012000290495FEB2027644A86E4691A6154C95&id=%2Fsites%2FGLAM%2FILOSLRB%20Technical%20Teams%2FExternal%20Data%20Sharing%2FDEM%5FLKO%5FUSL%5FSLR%5FV4%5F2&viewid=3f981477%2D2845%2D4f20%2Db31c%2Dceae155d20b2'
 #repo_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/Er5RUAKOWQROpjumUgyyPg4Bv10ZLSsNg-mUpcsBviUlOg?e=57q7Y3'
 plotly_link='https://007gc-my.sharepoint.com/:f:/g/personal/antoine_maranda_ec_gc_ca/EmYSvAyqCv9MnqSQw2Ic9BEB0AYRx9XJYZkeWZMUzLdiXg?e=0WdUCJ'
-st.title(f"PRELIMINARY VERSION of Topobathymetric Digital Elevation Model (Lake Ontario and Upper St. Lawrence River)")
-members='(GLAM members only)'
+st.title(f"Version 4.2 of Great Lake St. Lawrence River Topo-Bathymetric Digital Elevation Model (GLSLR-DEM)")
+members='(Expedited Review working grou members only)'
 st.header(f'[Full resolution DTM Download Repository {members}]({repo_link})')
 st.subheader('Or click on a tile for a 1m resolution overview')
 #link_mosaic='https://007gc-my.sharepoint.com/personal/antoine_maranda_ec_gc_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m%2Fmosaic%5F100m%5F4326%2Ezip&parent=%2Fpersonal%2Fantoine%5Fmaranda%5Fec%5Fgc%5Fca%2FDocuments%2FDEM%5FGLAM%2FDEM%5F10m'
